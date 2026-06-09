@@ -1,8 +1,8 @@
 # ifndef EASYFIND_HPP
 # define EASYFIND_HPP
 
-template <typename T, int N>
-T easyfind(T type, N value) {
+template <typename T>
+T easyfind(T type, int value) {
     
 }
 
