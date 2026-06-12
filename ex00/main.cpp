@@ -4,18 +4,16 @@
 
 int main()
 {
-    std::vector<int> tmp;
+    std::vector<int> v;
 
-    tmp.push_back(10);
-    tmp.push_back(20);
-    tmp.push_back(30);
-    tmp.push_back(40);
-
-    const std::vector<int> v(tmp);
+    v.push_back(10);
+    v.push_back(20);
+    v.push_back(30);
+    v.push_back(40);
 
     try
     {
-        std::vector<int>::const_iterator it = easyfind(v, 30);
+        std::vector<int>::iterator it = easyfind(v, 40);
         std::cout << "Found: " << *it << std::endl;
     }
     catch (std::exception& e)
