@@ -1,14 +1,20 @@
 # include "Span.hpp"
 # include <iostream>
+# include <list>
 
 int main()
 {
-    Span sp(5);
-    sp.addNumber(6);
-    sp.addNumber(3);
-    sp.addNumber(17);
-    sp.addNumber(9);
-    sp.addNumber(11);
+    Span sp(100000);
+
+
+    std::list<int> tmp;
+    for (size_t i = 0; i < 100000; i++) {
+        tmp.push_back(i);
+    }
+    
+
+    sp.addNumbers(10, 20);
+    
 
     
     std::cout << sp.shortestSpan() << std::endl;

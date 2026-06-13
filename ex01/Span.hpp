@@ -18,6 +18,15 @@ class Span {
         void addNumber(long long num);
         long long shortestSpan();
         long long longestSpan();
+        template <typename iterator>
+        void addNumbers(iterator first, iterator last) {
+            while(first != last) {
+                if (buf.size() >= Max_n)
+                    throw std::runtime_error("span is full");
+                addNumber(*first);
+                first++;
+            }
+        }
 };
 
 # endif
