@@ -1,6 +1,6 @@
 CC = c++
 CFLAGS = -Wall -Wextra -Werror -std=c++98
-NAME = 
+NAME = Stack
 SRCS = main.cpp MutantStack.cpp
 HEADRS = MutantStack.hpp
 OBGS = ${SRCS:.cpp=.o}
