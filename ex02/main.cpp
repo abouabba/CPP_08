@@ -24,10 +24,5 @@ int main()
         ++it;
     }
     std::stack<int> s(mstack);
-    for (size_t i = 0; i < s.size(); i++) {
-        std::cout <<  s.top() << std::endl;
-        s.pop();
-    }
-
     return 0;
 }

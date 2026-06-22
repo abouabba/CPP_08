@@ -10,7 +10,6 @@ int main()
     for (size_t i = 0; i < 99999; i++) {
         tmp.push_back(i);
     }
-    
     try {
         std::cout << "add one number:" << std::endl;
         sp.addNumber(9);
