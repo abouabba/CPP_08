@@ -1,5 +1,6 @@
 # include <iostream>
 # include "MutantStack.hpp"
+# include <algorithm>
 
 int main()
 {
@@ -18,11 +19,15 @@ int main()
     MutantStack<int>::iterator ite = mstack.end();
     ++it;
     --it;
-    while (it != ite)
-    {
-    std::cout << *it << std::endl;
-    ++it;
+    while (it != ite) {
+        std::cout << *it << std::endl;
+        ++it;
     }
     std::stack<int> s(mstack);
+    for (size_t i = 0; i < s.size(); i++) {
+        std::cout <<  s.top() << std::endl;
+        s.pop();
+    }
+
     return 0;
 }

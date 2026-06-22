@@ -8,16 +8,16 @@
 class Span {
     private:
         unsigned int Max_n;
-        std::vector<long long> buf;
+        std::vector<int> buf;
     public:
         Span(unsigned int N);
         Span(const Span &other); 
         Span &operator=(const Span &other);
         ~Span();
 
-        void addNumber(long long num);
-        long long shortestSpan();
-        long long longestSpan();
+        void addNumber(int num);
+        int shortestSpan();
+        int longestSpan();
         template <typename iterator>
         void addNumbers(iterator first, iterator last) {
             while(first != last) {
